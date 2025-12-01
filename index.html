@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvaraj M | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">YM</div>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div id="heroCanvasWrapper" class="hero-canvas-wrapper">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+      <div class="container hero-content">
+      <div class="hero-text">
+          <h1 class="hero-title">YUVARAJ <span>M</span></h1>
+          <p class="hero-kicker">Junior Web Developer · Full-Stack Enthusiast</p>
+          <p class="hero-subtitle">
+            <span id="typedSkills" class="typed"></span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="M YUVARAJ.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+      </div>
+      <div id="heroParticles" class="hero-particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-visual">
+          <div class="about-orbit">
+            <div class="orbit-sphere"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            Enthusiastic and detail-oriented B.Sc. Computer Science graduate with proven experience in full-stack web development, internships, and technical support roles. Skilled in responsive UI design, dynamic web application development using HTML, CSS, JavaScript, PHP, and MySQL, alongside optimizing website performance, improving UI/UX design, and managing back-end operations. Passionate about analyzing human behavior, problem-solving, and delivering efficient digital solutions while continuously advancing technical expertise in the IT field.
+          </p>
+          <div class="about-highlights">
+            <div class="about-item">
+              <span class="about-icon">🎓</span>
+              <div>
+                <h3>B.Sc. Computer Science Graduate (2025)</h3>
+                <p>Christ College of Science and Management, Malur</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <span class="about-icon">💼</span>
+              <div>
+                <h3>2 Internships at Rats Technologies</h3>
+                <p>Junior Web Developer Intern (Frontend & Full-Stack)</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <span class="about-icon">🛠️</span>
+              <div>
+                <h3>Full-Stack Web Development</h3>
+                <p>HTML, CSS, JavaScript, PHP, MySQL, Python</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <span class="about-icon">📍</span>
+              <div>
+                <h3>Based in Hosur, Tamil Nadu</h3>
+                <p>Open to relocation and remote opportunities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-description">A blend of front-end, back-end, tools, and soft skills that help me build complete web solutions.</p>
+        <div class="skills-grid">
+          <div class="skill-card" data-tilt>
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Backend</h3>
+            <ul>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Database Management</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Team Work</li>
+              <li>Project Management</li>
+              <li>Problem Solving</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2025 - Feb 2025</span>
+              <h3>Junior Web Developer Intern · Rats Technologies</h3>
+              <p>Developed and deployed full-stack web applications including an Open Elective Selection System and Student Feedback Analysis System with secure authentication, user-friendly UI, and optimized database queries.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aug 2024 - Sep 2024</span>
+              <h3>Junior Web Developer Intern · Rats Technologies</h3>
+              <p>Contributed to front-end prototypes and internal tools, enhancing responsive design, UX, and performance for education-focused web applications.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Dec 2023 - Jan 2024</span>
+              <h3>Technical Support · HRH Next</h3>
+              <p>Resolved technical queries via chat, call, and email with a strong focus on customer satisfaction, clear communication, and accurate documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-description">A selection of academic and internship projects showcasing my full-stack capabilities.</p>
+        <div class="projects-grid">
+          <article class="project-card" data-tilt>
+            <div class="project-content">
+              <h3>Student Feedback Analysis System</h3>
+              <p>Web-based system to manage student feedback with secure login, question management, and analytics dashboard for faculty and administrators.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <div class="project-content">
+              <h3>Open Elective Selection System</h3>
+              <p>Automated elective selection platform that processes student preferences and seat availability in real-time to generate optimal allocations.</p>
+              <div class="project-tech">
+                <span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <div class="project-content">
+              <h3>Learning Hub</h3>
+              <p>Responsive front-end website offering categorized learning resources with clean UI and mobile-friendly layouts.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <div class="project-content">
+              <h3>Mobile Shop Management System</h3>
+              <p>Inventory and billing system for mobile stores to manage products, sales, and customer information efficiently.</p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Achievements</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h3>Web Development &amp; Programming</h3>
+            <p>Coursework and certifications focused on HTML, CSS, JavaScript, PHP, and MySQL.</p>
+          </div>
+          <div class="cert-card">
+            <h3>Internship Experience</h3>
+            <p>Successfully completed multiple internships at Rats Technologies and HRH Next.</p>
+          </div>
+          <div class="cert-card">
+            <h3>Academic Performance</h3>
+            <p>Consistent academic performance in B.Sc. Computer Science with strong project work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section languages">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <p class="section-description">Comfortable communicating and working in multiple languages.</p>
+        <div class="languages-grid">
+          <div class="language-card">
+            <h3>English</h3>
+            <p>Professional proficiency for communication, documentation, and presentations.</p>
+          </div>
+          <div class="language-card">
+            <h3>Tamil</h3>
+            <p>Native / fluent, used in daily communication and collaboration.</p>
+          </div>
+          <div class="language-card">
+            <h3>Kannada</h3>
+            <p>Fluent, comfortable in technical and non-technical discussions.</p>
+          </div>
+          <div class="language-card">
+            <h3>Telugu</h3>
+            <p>Conversational proficiency, suitable for team communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-description">Have an opportunity, project, or just want to say hello? Let’s connect.</p>
+          <ul class="contact-list">
+            <li><span>Email:</span> <a href="mailto:yuvaraj182848@gmail.com">yuvaraj182848@gmail.com</a></li>
+            <li><span>Phone:</span> <a href="tel:+916382131466">(+91) 63821 31466</a></li>
+            <li><span>Location:</span> Hosur, Tamil Nadu, India</li>
+          </ul>
+          <div class="contact-socials">
+            <a href="#" aria-label="GitHub" class="social-icon">GH</a>
+            <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Yuvaraj M. All Rights Reserved.</p>
+      <nav class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="lib/three.min.js"></script>
+  <script src="lib/gsap.min.js"></script>
+  <script src="lib/ScrollTrigger.min.js"></script>
+  <script src="lib/vanilla-tilt.min.js"></script>
+  <script src="lib/particles.min.js"></script>
+
+  <!-- Main Scripts -->
+  <script src="js/three-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

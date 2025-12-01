@@ -1,0 +1,53 @@
+/* Scroll reveal baseline (animated via JS using .reveal class) */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Certifications bounce-in */
+
+.cert-card {
+  transform-origin: center bottom;
+}
+
+.cert-card.bounce-in {
+  animation: certBounce 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes certBounce {
+  0% {
+    transform: translateY(40px) scale(0.96);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-6px) scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Subtle orbit rotation for about sphere (JS also nudges on mousemove) */
+
+.orbit-sphere {
+  animation: orbitSpin 18s linear infinite;
+}
+
+@keyframes orbitSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
